@@ -12,11 +12,7 @@ jobs:
         with:
           sarif: results.sarif
           fail-on: none
-
-      - name: Select version Slither
-        run: |
-          pip install slither-analyzer==0.4.15       
-
+          
       - name: Run Slither
         run: |
           slither .
