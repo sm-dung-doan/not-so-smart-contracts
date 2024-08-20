@@ -12,14 +12,10 @@ jobs:
         with:
           sarif: results.sarif
           fail-on: none
-          
-      - name: Install Slither
-        run: |
-          solc-select install 0.4.15 
-      
+
       - name: Select version Slither
         run: |
-          solc-select use 0.4.15            
+          pip install slither-analyzer==0.4.15       
 
       - name: Run Slither
         run: |
