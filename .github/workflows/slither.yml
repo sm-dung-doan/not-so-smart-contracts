@@ -6,11 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: pwd
+      - name: ls
         run: |
-          pwd
+          ls
         
-
       - name: Run Slither
         uses: crytic/slither-action@v0.4.0
         id: slither
@@ -18,7 +17,6 @@ jobs:
           solc-version: 0.4.15
           sarif: results.sarif
           fail-on: none
-          target: '/bad_randomness'
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
