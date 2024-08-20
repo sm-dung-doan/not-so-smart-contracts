@@ -1,11 +1,10 @@
 contract theRun {
-        uint private Balance = 0;
+        uint private Balance = 1;
         uint private Payout_id = 0;
         uint private Last_Payout = 0;
         uint private WinningPot = 0;
         uint private Min_multiplier = 1100; //110%
         
-        //run
         //Fees are necessary and set very low, to maintain the website. The fees will decrease each time they are collected.
         //Fees are just here to maintain the website at beginning, and will progressively go to 0% :)
         uint private fees = 0;
