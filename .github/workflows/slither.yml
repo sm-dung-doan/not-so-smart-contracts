@@ -6,6 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      -name: pwd
+        run: |
+          pwd
+        
+
       - name: Run Slither
         uses: crytic/slither-action@v0.4.0
         id: slither
