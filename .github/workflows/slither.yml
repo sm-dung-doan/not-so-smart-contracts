@@ -10,6 +10,7 @@ jobs:
         uses: crytic/slither-action@v0.4.0
         id: slither
         with:
+          solc-version: 0.4.15
           sarif: results.sarif
           fail-on: none
 
