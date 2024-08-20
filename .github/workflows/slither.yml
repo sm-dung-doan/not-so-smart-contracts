@@ -15,8 +15,7 @@ jobs:
           
       - name: Install Slither
         run: |
-          solc-select install 0.4.15
-          solc-select use 0.4.15            
+          solc-select install 0.4.15 | solc-select use 0.4.15            
 
       - name: Run Slither
         run: |
