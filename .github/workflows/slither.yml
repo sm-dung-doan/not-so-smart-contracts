@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      -name: pwd
+      - name: pwd
         run: |
           pwd
         
